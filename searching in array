@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={10,20,30,40,50,10,70,80};
+    int i,n,count=0;
+    cout<<"Enter the Element to search in data: ";
+    cin>>n;
+    for(i=0;i<8;i++)
+    {
+        if(arr[i]==n)
+        {
+            count+=1;
+            cout<<"Element found at the index ";
+            cout<<i;
+        }
+
+    }
+    if(count==0)
+    {
+        cout<<"Element not found";
+    }
+    return 0;
+}
