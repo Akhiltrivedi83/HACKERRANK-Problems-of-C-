@@ -1,0 +1,22 @@
+/*#include<iostream>
+using namespace std;
+int main()
+{
+    string x="Akhil";
+    string y="Trivedi";
+    string z;
+    z=x+' '+y;
+    cout<<z;
+    return 0;
+}*/
+#include<iostream>
+using namespace std;
+int main()
+{
+    string x;
+    string y;
+    cin>>x;
+    cin>>y;
+    cout<<x.append(y);
+    return 0;
+}
