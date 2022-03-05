@@ -1,0 +1,65 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,factorial=1,m=0,i,j=1,count=0,sum=0,temp,r;
+    cout<<"SELECT OPERATION: "<<"\n\n";
+    cout<<"1 :"<<"Factorial "<<"\n";
+    cout<<"2 :"<<"Exponent "<<"\n";
+    cout<<"3 :"<<"Armstrong "<<"\n";
+    cin>>n;
+    switch(n)
+    {
+        case 1:
+        {
+            cout<<"Enter the number: "<<endl;
+            cin>>m;
+            for(i=1;i<=m;i++)
+            {
+                factorial=factorial*i;
+            }
+            cout<<factorial;
+            break;
+        }
+        case 2:
+        cout<<"Enter the number: "<<endl;
+        cin>>n;
+        cout<<"Enter the exponent: "<<endl;
+        cin>>m;
+        {
+        for(i=1;i<=m;i++)
+        {
+            j=j*n;
+        }
+        cout<<j;
+        break;
+        }
+        case 3:
+        {
+            cout<<"Enter the number: ";
+            cin>>n;
+            temp=n;
+            m=n;
+            while(n>0)
+            {
+                count+=1;
+                n=n/10;
+            }
+            while(temp>0)
+            {
+                r=temp%10;
+                sum+=pow(r,count);
+                temp=temp/10;
+            }
+            if(sum==m)
+            {
+            cout<<"Armstrong number";
+            }
+            else
+            {
+                cout<<"Not a armstrong number";
+            }
+            
+        }
+    }
+}
