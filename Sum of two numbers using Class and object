@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class sum{ 
+    public:
+    int x;
+    int y;
+    void add(int x,int y);
+        //int z;
+        //z=x+y;
+        //cout<<x+y<<"\n";
+    
+
+};
+void sum::add(int x,int y)
+{
+    cout<<x+y<<"\n";
+}
+int main()
+{
+    int z;
+    sum number1;
+    sum number2;
+    number1.add(5,100);
+    number2.add(10,15);
+    //cout<<z;
+    return 0;
+}
